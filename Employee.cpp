@@ -6,7 +6,7 @@ using namespace std;
 Employee::Employee()
 {
 	empno = 0;
-	strcpy (name, "");
+	strcpy(name, "");
 	basicsal = 0;
 	allowance = 0;
 	totalsalary = 0;
@@ -16,15 +16,10 @@ Employee::Employee()
 Employee::Employee(int p_empno, const char* p_name)
 {
 	empno=p_empno;
-	strcpy (name, p_name);
+	strcpy(name, p_name);
 }
 
-/*void Employee::setdetails(int p_empno, const char* p_name){
 
-	empno = p_empno;
-	strcpy_s(name, p_name);
-	
-}*/
 
 void Employee::setsalary(double p_basicsal, double p_allowance){
 	basicsal = p_basicsal;
